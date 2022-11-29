@@ -16,12 +16,15 @@ p {
 }
 /*horizontal line dividers▼*/
 hr {
-  font-weight: lighter;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 /*horizontal line dividers▲*/
 /*order now button container ▼*/
 .order-now-container {
-  padding: 1rem;
+  padding: 1rem; /*add spacing around the order now button*/
 }
 .order-now {
   font-weight: bold;
@@ -34,14 +37,15 @@ hr {
   padding-left: 0.8em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
+  cursor: pointer;
 }
 /*order now button container▲*/
 /*fontawesome icons▼*/
 .fontawesome-icons > i {
   /*Icons paper-plane, rocket ,plane*/
-  color: rgb(250, 0, 229); /*peach orange*/
-  /* color: #ffc98e; Sicilian Villa */
+  color: rgb(250, 0, 229);
   font-size: 2em;
+  padding: 5px;
 }
 .fontawesome-icons-container {
   display: grid;
@@ -56,8 +60,10 @@ hr {
   align-items: center;
 }
 .cards-container {
-  margin: 1em;
+  margin: 0.25em;
   padding: 1em;
+  width: 10rem;
+  height: 23rem;
   background-image: linear-gradient(
     to right,
     rgba(48, 48, 48, 0),
@@ -68,6 +74,11 @@ hr {
   border-top-left-radius: 25px;
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px;
+}
+.inside-container {
+  width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .card-header {
   display: grid;
