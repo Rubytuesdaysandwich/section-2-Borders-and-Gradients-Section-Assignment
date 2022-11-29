@@ -1,3 +1,40 @@
 body {
-  background-color: black;
+  background-color: #323232; /*carbon*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+p {
+  color: white;
+}
+.order-now {
+  font-weight: bold;
+  background-color: #ffcf9a;
+  border-radius: 1em;
+  border-style: none;
+  display: flex;
+  margin: auto;
+  padding-right: 0.8em;
+  padding-left: 0.8em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+i {
+  color: #ffcf9a; /*peach orange*/
+  color: #ffc98e; /* Sicilian Villa */
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+.cards-container {
+  margin: 1em;
+  padding: 1em;
+  border: #ffcf9a double 3px;
 }
