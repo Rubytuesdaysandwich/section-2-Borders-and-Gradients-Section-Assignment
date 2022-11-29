@@ -7,14 +7,25 @@ h3,
 h4,
 h5,
 h6 {
-  color: white;
+  color: rgb(255, 196, 0);
+  display: grid;
 }
 p {
-  color: white;
+  color: rgb(255, 196, 0);
+  font-size: 0.6rem;
+}
+/*horizontal line dividers▼*/
+hr {
+  font-weight: lighter;
+}
+/*horizontal line dividers▲*/
+/*order now button container ▼*/
+.order-now-container {
+  padding: 1rem;
 }
 .order-now {
   font-weight: bold;
-  background-color: #ffcf9a;
+  background: linear-gradient(to right, rgb(252, 59, 236), rgb(250, 0, 229));
   border-radius: 1em;
   border-style: none;
   display: flex;
@@ -24,17 +35,51 @@ p {
   padding-top: 0.3em;
   padding-bottom: 0.3em;
 }
-i {
-  color: #ffcf9a; /*peach orange*/
-  color: #ffc98e; /* Sicilian Villa */
+/*order now button container▲*/
+/*fontawesome icons▼*/
+.fontawesome-icons > i {
+  /*Icons paper-plane, rocket ,plane*/
+  color: rgb(250, 0, 229); /*peach orange*/
+  /* color: #ffc98e; Sicilian Villa */
+  font-size: 2em;
 }
-
-.cards {
+.fontawesome-icons-container {
+  display: grid;
+  place-items: center;
+}
+/*fontawesome icons▲*/
+/*cards▼*/
+.cards > div {
+  /*position cards center*/
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .cards-container {
   margin: 1em;
   padding: 1em;
-  border: #ffcf9a double 3px;
+  background-image: linear-gradient(
+    to right,
+    rgba(48, 48, 48, 0),
+    rgb(10, 12, 10)
+  );
+  border: rgb(250, 0, 229) double 6px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
+.card-header {
+  display: grid;
+  place-content: center;
+}
+.card-text {
+  display: grid;
+  place-content: center;
+}
+.money-bold > .card-text {
+  /*modify the text of the dollar amount to a bold scale and make it larger and add color*/
+  font-size: 2rem;
+  color: rgb(250, 0, 229);
+}
+/*cards▲*/
