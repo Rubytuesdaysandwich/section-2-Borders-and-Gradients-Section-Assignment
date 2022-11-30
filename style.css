@@ -7,12 +7,13 @@ h3,
 h4,
 h5,
 h6 {
+  /*set the color of the headers h1 through h6 to yellow*/
   color: rgb(255, 196, 0);
-  display: grid;
 }
 p {
+  /*set the font size and color of all p tags*/
   color: rgb(255, 196, 0);
-  font-size: 0.6rem;
+  /* font-size: 0.6rem; */
 }
 /*horizontal line dividers▼*/
 hr {
@@ -53,17 +54,24 @@ hr {
 }
 /*fontawesome icons▲*/
 /*cards▼*/
-.cards > div {
+.cards {
+  /*set the horizontal positioning*/
   /*position cards center*/
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.cards-box {
+  margin: 10%; /*move the card vertically on the page*/
 }
 .cards-container {
+  /*make the border rounding the corners and setting the container sizing of the cards and distance between each card and padding also set the border color*/
   margin: 0.25em;
   padding: 1em;
-  width: 10rem;
-  height: 23rem;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
   background-image: linear-gradient(
     to right,
     rgba(48, 48, 48, 0),
@@ -76,20 +84,30 @@ hr {
   border-bottom-left-radius: 100px;
 }
 .inside-container {
+  /*keep the content within the container neat and contained*/
   width: fit-content;
   padding-left: 15px;
   padding-right: 15px;
 }
 .card-header {
+  /*set the header of the cards to grid center and a medium size font and shrink the margins to make the containers smaller*/
   display: grid;
   place-content: center;
+  font-size: medium;
+  margin: 5px 20px;
 }
 .card-text {
+  /*set the font size of all text within the cards and center the text using grid*/
+  font-size: 0.7rem;
   display: grid;
   place-content: center;
 }
-.money-bold > .card-text {
-  /*modify the text of the dollar amount to a bold scale and make it larger and add color*/
+.money-bold > .money {
+  /*modify the text of the dollar amount to a bold scale and make it larger and add color along with shrinking the margins*/
+  display: grid;
+  place-content: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
   font-size: 2rem;
   color: rgb(250, 0, 229);
 }
